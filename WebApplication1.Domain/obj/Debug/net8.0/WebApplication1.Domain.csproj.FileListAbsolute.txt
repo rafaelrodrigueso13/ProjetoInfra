@@ -1,0 +1,11 @@
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.AssemblyInfoInputs.cache
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.AssemblyInfo.cs
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Domain.deps.json
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Domain.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Domain.pdb
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\refint\WebApplication1.Domain.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.pdb
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Domain\obj\Debug\net8.0\ref\WebApplication1.Domain.dll

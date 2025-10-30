@@ -1,0 +1,41 @@
+@model WebApplication1.Application.ViewModels.ItemCreateUpdateViewModel
+
+@{
+    ViewData["Title"] = "Novo Item";
+}
+
+<h2>Novo Item</h2>
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label asp-for="Modelo"></label>
+        <input asp-for="Modelo" class="form-control" />
+        <span asp-validation-for="Modelo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Categoria"></label>
+        <input asp-for="Categoria" class="form-control" />
+        <span asp-validation-for="Categoria" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Patrimonio"></label>
+        <input asp-for="Patrimonio" class="form-control" />
+        <span asp-validation-for="Patrimonio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NumeroSerie"></label>
+        <input asp-for="NumeroSerie" class="form-control" />
+        <span asp-validation-for="NumeroSerie" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

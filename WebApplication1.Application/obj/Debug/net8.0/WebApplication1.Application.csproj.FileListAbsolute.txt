@@ -1,0 +1,15 @@
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\bin\Debug\net8.0\WebApplication1.Application.deps.json
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\bin\Debug\net8.0\WebApplication1.Application.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\bin\Debug\net8.0\WebApplication1.Application.pdb
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\bin\Debug\net8.0\WebApplication1.Domain.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\bin\Debug\net8.0\WebApplication1.Domain.pdb
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.csproj.AssemblyReference.cache
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.AssemblyInfoInputs.cache
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.AssemblyInfo.cs
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.csproj.CoreCompileInputs.cache
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebAppli.D223C664.Up2Date
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\refint\WebApplication1.Application.dll
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\WebApplication1.Application.pdb
+C:\Users\rafael.rodrigues\source\repos\WebApplication1\WebApplication1.Application\obj\Debug\net8.0\ref\WebApplication1.Application.dll
