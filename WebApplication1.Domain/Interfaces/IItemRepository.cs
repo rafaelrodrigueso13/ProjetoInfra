@@ -4,11 +4,11 @@ namespace WebApplication1.Domain.Interfaces
 {
     public interface IItemRepository
     {
-        Task<List<Item>> GetAllAsync();
-        Task<Item?> GetByIdAsync(int id);
-        Task AddAsync(Item item);
-        Task UpdateAsync(Item item);
-        Task DeleteAsync(Item item);
-        Task SaveChangesAsync();
+        Task<IEnumerable<Item>> GetAllAsync();
+        Task<IEnumerable<Item>> SearchAsync(string searchTerm);
+        Task<Item> GetByIdAsync(int id);
+        Task<Item> AddAsync(Item entity);
+        Task<Item> UpdateAsync(Item entity);
+        Task<bool> DeleteAsync(int id);
     }
 }
