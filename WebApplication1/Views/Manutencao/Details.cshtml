@@ -1,0 +1,13 @@
+@model WebApplication1.Application.ViewModels.ManutencaoViewModel
+
+<h2>Detalhes da Manutenção</h2>
+
+<div class="card p-3">
+    <p><b>Item:</b> @Model.ItemModelo</p>
+    <p><b>Descrição:</b> @Model.Observacao</p>
+    <p><b>Data Entrada:</b> @Model.DataInicio.ToShortDateString()</p>
+    <p><b>Data Saída:</b> @(Model.DataFim?.ToShortDateString() ?? "-")</p>
+    <p><b>Status:</b> @Model.Status</p>
+</div>
+
+<a href="/Manutencao?itemId=@Model.ItemId" class="btn btn-secondary mt-3">Voltar</a>

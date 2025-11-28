@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Application.DTOs;
 using WebApplication1.Application.Services;
 using WebApplication1.Application.ViewModels;
-using WebApplication1.Domain.Entities;
 
 namespace WebApplication1.Controllers
 {
@@ -17,6 +17,7 @@ namespace WebApplication1.Controllers
         public async Task<IActionResult> Index()
         {
             var items = await _service.GetAllAsync();
+
             var model = items.Select(i => new ItemViewModel
             {
                 Id = i.Id,
@@ -25,7 +26,25 @@ namespace WebApplication1.Controllers
                 Patrimonio = i.Patrimonio,
                 NumeroSerie = i.NumeroSerie
             });
+
             return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SearchItems(string searchTerm)
+        {
+            var items = await _service.SearchAsync(searchTerm ?? "");
+
+            var model = items.Select(i => new ItemViewModel
+            {
+                Id = i.Id,
+                Modelo = i.Modelo,
+                Categoria = i.Categoria,
+                Patrimonio = i.Patrimonio,
+                NumeroSerie = i.NumeroSerie
+            });
+
+            return PartialView("_ItemListPartial", model);
         }
 
         public IActionResult Create()
@@ -36,9 +55,10 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ItemCreateUpdateViewModel model)
         {
-            if (!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid)
+                return View(model);
 
-            var item = new Item
+            var dto = new ItemDto
             {
                 Modelo = model.Modelo,
                 Categoria = model.Categoria,
@@ -46,14 +66,16 @@ namespace WebApplication1.Controllers
                 NumeroSerie = model.NumeroSerie
             };
 
-            await _service.CreateAsync(item);
+            await _service.AddAsync(dto);
+
             return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Edit(int id)
         {
             var item = await _service.GetByIdAsync(id);
-            if (item == null) return NotFound();
+            if (item == null)
+                return NotFound();
 
             var model = new ItemCreateUpdateViewModel
             {
@@ -63,15 +85,17 @@ namespace WebApplication1.Controllers
                 Patrimonio = item.Patrimonio,
                 NumeroSerie = item.NumeroSerie
             };
+
             return View(model);
         }
 
         [HttpPost]
         public async Task<IActionResult> Edit(ItemCreateUpdateViewModel model)
         {
-            if (!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid)
+                return View(model);
 
-            var item = new Item
+            var dto = new ItemDto
             {
                 Id = model.Id,
                 Modelo = model.Modelo,
@@ -80,14 +104,16 @@ namespace WebApplication1.Controllers
                 NumeroSerie = model.NumeroSerie
             };
 
-            await _service.UpdateAsync(item);
+            await _service.UpdateAsync(dto);
+
             return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Details(int id)
         {
             var item = await _service.GetByIdAsync(id);
-            if (item == null) return NotFound();
+            if (item == null)
+                return NotFound();
 
             var model = new ItemViewModel
             {
@@ -97,13 +123,15 @@ namespace WebApplication1.Controllers
                 Patrimonio = item.Patrimonio,
                 NumeroSerie = item.NumeroSerie
             };
+
             return View(model);
         }
 
         public async Task<IActionResult> Delete(int id)
         {
             var item = await _service.GetByIdAsync(id);
-            if (item == null) return NotFound();
+            if (item == null)
+                return NotFound();
 
             var model = new ItemViewModel
             {
@@ -113,6 +141,7 @@ namespace WebApplication1.Controllers
                 Patrimonio = item.Patrimonio,
                 NumeroSerie = item.NumeroSerie
             };
+
             return View(model);
         }
 

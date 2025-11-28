@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Application\\WebApplication1.Application.csproj": {
+    "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Application\\WebApplication1.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Application\\WebApplication1.Application.csproj",
+        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Application\\WebApplication1.Application.csproj",
         "projectName": "WebApplication1.Application",
-        "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Application\\WebApplication1.Application.csproj",
+        "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Application\\WebApplication1.Application.csproj",
         "packagesPath": "C:\\Users\\rafael.rodrigues\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Application\\obj\\",
+        "outputPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj": {
-                "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj"
+              "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj": {
+                "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj"
               }
             }
           }
@@ -53,6 +53,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -73,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj": {
+    "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj",
         "projectName": "WebApplication1.Domain",
-        "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj",
+        "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj",
         "packagesPath": "C:\\Users\\rafael.rodrigues\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\obj\\",
+        "outputPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj": {
+    "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj",
         "projectName": "WebApplication1.Infrastructure",
-        "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\rafael.rodrigues\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,8 +176,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj": {
-                "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Domain\\WebApplication1.Domain.csproj"
+              "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj": {
+                "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Domain\\WebApplication1.Domain.csproj"
               }
             }
           }
@@ -223,14 +233,14 @@
         }
       }
     },
-    "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\rafael.rodrigues\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -251,11 +261,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Application\\WebApplication1.Application.csproj": {
-                "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Application\\WebApplication1.Application.csproj"
+              "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Application\\WebApplication1.Application.csproj": {
+                "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Application\\WebApplication1.Application.csproj"
               },
-              "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\rafael.rodrigues\\source\\repos\\WebApplication1\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj"
+              "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\rafael.rodrigues\\Documents\\Projetoinfra\\ProjetoInfra\\WebApplication1.Infrastructure\\WebApplication1.Infrastructure.csproj"
               }
             }
           }

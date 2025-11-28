@@ -1,0 +1,21 @@
+@model WebApplication1.Application.ViewModels.ManutencaoViewModel
+
+<h2>Excluir Manutenção</h2>
+
+<div class="alert alert-danger">
+    <p><strong>Tem certeza que deseja excluir esta manutenção?</strong></p>
+</div>
+
+<div class="card p-3">
+    <p><b>Item:</b> @Model.ItemModelo</p>
+    <p><b>Descrição:</b> @Model.Observacao</p>
+    <p><b>Data Entrada:</b> @Model.DataInicio.ToShortDateString()</p>
+    <p><b>Data Saída:</b> @(Model.DataFim?.ToShortDateString() ?? "-")</p>
+    <p><b>Status:</b> @Model.Status</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger mt-3">Confirmar Exclusão</button>
+    <a asp-action="Index" asp-route-itemId="@Model.ItemId" class="btn btn-secondary mt-3">Cancelar</a>
+</form>

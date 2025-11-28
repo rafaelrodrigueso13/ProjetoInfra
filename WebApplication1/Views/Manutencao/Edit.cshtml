@@ -1,0 +1,34 @@
+@model WebApplication1.Application.ViewModels.ManutencaoCreateUpdateViewModel
+
+<h2>Editar Manutenção</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ItemId" />
+
+    <div class="form-group mt-2">
+        <label>Observação</label>
+        <input asp-for="Observacao" class="form-control" />
+        <span asp-validation-for="Observacao" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-2">
+        <label>Data Entrada</label>
+        <input asp-for="DataInicio" type="date" class="form-control" />
+        <span asp-validation-for="DataInicio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-2">
+        <label>Data Saída</label>
+        <input asp-for="DataFim" type="date" class="form-control" />
+        <span asp-validation-for="DataFim" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-2">
+        <label>Status</label>
+        <input asp-for="Status" class="form-control" />
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+    <a asp-action="Index" asp-controller="Item" class="btn btn-secondary mt-3">Voltar</a>
+</form>

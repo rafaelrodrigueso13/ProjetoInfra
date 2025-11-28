@@ -1,0 +1,37 @@
+@model IEnumerable<WebApplication1.Application.ViewModels.ManutencaoViewModel>
+
+<h2>Manutenções do item: @ViewBag.Item?.Modelo</h2>
+
+<a class="btn btn-primary" href="/Manutencao/Create?itemId=@ViewBag.ItemId">Nova Manutenção</a>
+<a asp-controller="Item" asp-action="Index" class="btn btn-secondary">Voltar</a>
+
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Descrição</th>
+            <th>Entrada</th>
+            <th>Saída</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>@m.ItemModelo</td>
+                <td>@m.Observacao</td>
+                <td>@m.DataInicio.ToShortDateString()</td>
+                <td>@(m.DataFim?.ToShortDateString() ?? "-")</td>
+                <td>@m.Status</td>
+                <td>
+                    <a class="btn btn-sm btn-info" href="/Manutencao/Details/@m.Id">Detalhes</a>
+                    <a class="btn btn-sm btn-warning" href="/Manutencao/Edit/@m.Id">Editar</a>
+                    <a class="btn btn-sm btn-danger" href="/Manutencao/Delete/@m.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
